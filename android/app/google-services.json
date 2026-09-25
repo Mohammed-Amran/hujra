@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "162048275217",
+    "project_id": "hujra-4a2f6",
+    "storage_bucket": "hujra-4a2f6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162048275217:android:d3f1f772e6400cd1b792b0",
+        "android_client_info": {
+          "package_name": "com.example.hujra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRbrlR0am-LaPX-7SpMlkYKjBQV0Ix1cA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
