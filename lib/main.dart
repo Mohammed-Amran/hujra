@@ -35,6 +35,7 @@ class MyApp extends ConsumerWidget {
 
     return MaterialApp(
       title: 'Hujra',
+      debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: settings.isDarkMode ? ThemeMode.dark : ThemeMode.light,
