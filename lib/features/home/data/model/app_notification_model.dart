@@ -7,7 +7,7 @@ part 'app_notification_model.freezed.dart';
 part 'app_notification_model.g.dart';
 
 @freezed
-class AppNotificationModel with _$AppNotificationModel {
+abstract class AppNotificationModel with _$AppNotificationModel {
   const AppNotificationModel._();
 
   const factory AppNotificationModel({

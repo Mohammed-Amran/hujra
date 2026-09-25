@@ -7,7 +7,7 @@ part 'video_model.freezed.dart';
 part 'video_model.g.dart';
 
 @freezed
-class VideoModel with _$VideoModel {
+abstract class VideoModel with _$VideoModel {
   const VideoModel._();
 
   const factory VideoModel({

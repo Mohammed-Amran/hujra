@@ -5,7 +5,7 @@ part 'scholar_model.freezed.dart';
 part 'scholar_model.g.dart';
 
 @freezed
-class ScholarModel with _$ScholarModel {
+abstract class ScholarModel with _$ScholarModel {
   const ScholarModel._();
 
   const factory ScholarModel({

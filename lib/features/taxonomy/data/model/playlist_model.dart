@@ -5,7 +5,7 @@ part 'playlist_model.freezed.dart';
 part 'playlist_model.g.dart';
 
 @freezed
-class PlaylistModel with _$PlaylistModel {
+abstract class PlaylistModel with _$PlaylistModel {
   const PlaylistModel._();
 
   const factory PlaylistModel({

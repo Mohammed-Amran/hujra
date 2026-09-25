@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../viewmodel/categories_view_model.dart';
+import '../../../settings/presentation/view/settings_drawer.dart';
 
 class CategoriesScreen extends ConsumerWidget {
   const CategoriesScreen({super.key});
@@ -13,6 +14,7 @@ class CategoriesScreen extends ConsumerWidget {
       appBar: AppBar(
         title: const Text('Subjects (زانستەکان)'),
       ),
+      drawer: const SettingsDrawer(),
       body: categoriesAsync.when(
         data: (categories) {
           final activeCategories = categories.where((c) => c.isActive).toList();

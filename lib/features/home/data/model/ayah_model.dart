@@ -5,7 +5,7 @@ part 'ayah_model.freezed.dart';
 part 'ayah_model.g.dart';
 
 @freezed
-class AyahModel with _$AyahModel {
+abstract class AyahModel with _$AyahModel {
   const AyahModel._();
 
   const factory AyahModel({

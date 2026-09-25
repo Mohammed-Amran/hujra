@@ -7,7 +7,7 @@ import '../../../playback/domain/entity/video_entity.dart';
 part 'home_state.freezed.dart';
 
 @freezed
-class HomeState with _$HomeState {
+abstract class HomeState with _$HomeState {
   const factory HomeState({
     AyahEntity? dailyAyah,
     @Default([]) List<VideoEntity> latestLessons,

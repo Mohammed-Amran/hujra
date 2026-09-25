@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../viewmodel/home_view_model.dart';
 
+import '../../../settings/presentation/view/settings_drawer.dart';
+
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
@@ -21,9 +23,7 @@ class HomeScreen extends ConsumerWidget {
           ),
         ],
       ),
-      drawer: const Drawer(
-        child: Center(child: Text('Settings / Watch History')),
-      ),
+      drawer: const SettingsDrawer(),
       body: homeStateAsync.when(
         data: (state) {
           return RefreshIndicator(

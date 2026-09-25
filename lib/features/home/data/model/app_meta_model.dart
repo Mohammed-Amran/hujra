@@ -5,7 +5,7 @@ part 'app_meta_model.freezed.dart';
 part 'app_meta_model.g.dart';
 
 @freezed
-class AppMetaModel with _$AppMetaModel {
+abstract class AppMetaModel with _$AppMetaModel {
   const AppMetaModel._();
 
   const factory AppMetaModel({

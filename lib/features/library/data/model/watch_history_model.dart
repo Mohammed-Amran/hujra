@@ -7,7 +7,7 @@ part 'watch_history_model.freezed.dart';
 part 'watch_history_model.g.dart';
 
 @freezed
-class WatchHistoryModel with _$WatchHistoryModel {
+abstract class WatchHistoryModel with _$WatchHistoryModel {
   const WatchHistoryModel._();
 
   const factory WatchHistoryModel({
