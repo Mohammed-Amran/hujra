@@ -8,14 +8,19 @@ import 'features/settings/presentation/viewmodel/settings_view_model.dart';
 import 'features/onboarding/presentation/view/onboarding_screen.dart';
 
 void main() async {
+
   WidgetsFlutterBinding.ensureInitialized();
   
   // Initialize Firebase (Requires flutterfire configure by user)
   try {
-    await Firebase.initializeApp();
-  } catch (e) {
-    debugPrint('Firebase initialization warning: $e');
-  }
+     
+       await Firebase.initializeApp();
+ 
+      } catch (e) {
+                  
+                   debugPrint('Firebase initialization warning: $e');
+ 
+                  }
 
   // Initialize Hive
   await Hive.initFlutter();
@@ -23,25 +28,44 @@ void main() async {
   await Hive.openBox<String>('watch_history');
   await Hive.openBox('settings_box'); // For user settings
 
-  runApp(const ProviderScope(child: MyApp()));
-}
+  runApp(
+         
+         const ProviderScope(
+                             
+                             child: MyApp()
+                             
+                            )
+         
+        );
+
+} // Closing brace of the 'main()' method.
+
 
 class MyApp extends ConsumerWidget {
+
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
+
     final settings = ref.watch(settingsViewModelProvider);
 
     return MaterialApp(
-      title: 'Hujra',
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme.lightTheme,
-      darkTheme: AppTheme.darkTheme,
-      themeMode: settings.isDarkMode ? ThemeMode.dark : ThemeMode.light,
-      home: settings.hasSeenOnboarding 
-          ? const MainNavigationScreen() 
-          : const OnboardingScreen(),
-    );
-  }
-}
+                      
+                        title: 'Hujra',
+                      
+                        debugShowCheckedModeBanner: false,
+                      
+                        theme: AppTheme.lightTheme,
+                      
+                        darkTheme: AppTheme.darkTheme,
+                      
+                        themeMode: settings.isDarkMode ? ThemeMode.dark : ThemeMode.light,
+                      
+                        home: settings.hasSeenOnboarding ? const MainNavigationScreen() : const OnboardingScreen(),
+                      
+                      );
+
+  } // Cloosing brace of the 'build()' method.
+
+} // Closing brace of the class.
